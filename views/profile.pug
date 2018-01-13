@@ -156,19 +156,19 @@ html(lang='en')
     // Portfolio
     #portfolio.myportfolio
       h3.text-center.slideanim My Portfolio
-      p.text-center.slideanim Demo of Projects and works undertaken by me.
+      p.text-center.slideanim ScreenShots of works undertaken by me.
       section#grid3d.vertical
         .grid-wrap
           .grid
             figure
-              a(href='portfolio/images/011.jpg', target='_blank')
-                img.slideanim(src='portfolio/images/011.jpg', alt='img011')
+              a(href='portfolio/images/011.jpg', target='_blank', title='E-commerce tax preparation')
+                img.slideanim(src='portfolio/images/011.jpg', alt='E-commerce tax preparation')
             figure
-              a(href='portfolio/images/012.jpg', target='_blank')
-                img.slideanim(src='portfolio/images/012.jpg', alt='img012')
+              a(href='portfolio/images/012.jpg', target='_blank' title='Tax Calculation Chart')
+                img.slideanim(src='portfolio/images/012.jpg', alt='Tax Calculation Chart')
             figure
-              a(href='portfolio/images/011.jpg', target='_blank')
-                img.slideanim(src='portfolio/images/011.jpg', alt='img013')
+              a(href='portfolio/images/013.jpg', target='_blank' title='Billing With Import Export')
+                img.slideanim(src='portfolio/images/013.jpg', alt='Billing With Import Export')
     // /Portfolio
     // Gallery
     #gallery.mygallery
@@ -202,7 +202,7 @@ html(lang='en')
           .row
             .col-md-6.slideanim
               .contact-details
-                form(action='#', method='post')
+                form(action='/contact_me', method='post')
                   .row
                     .col-sm-12.form-group
                       input#name.form-control(name='name', placeholder='Name', type='text', required='')
