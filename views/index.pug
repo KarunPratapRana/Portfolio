@@ -1,0 +1,366 @@
+doctype html
+//if lt IE 7
+  html.no-js.lt-ie9.lt-ie8.lt-ie7(lang='')  
+//if IE 7
+  html.no-js.lt-ie9.lt-ie8(lang='')  
+//if IE 8
+  html.no-js.lt-ie9(lang='')  
+// [if gt IE 8] <!
+html.no-js(lang='')
+  // <![endif]
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    title Tork html template
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='apple-touch-icon', href='apple-touch-icon.png')
+    link(rel='stylesheet', href='assets/css/slicknav.min.css')
+    link(rel='stylesheet', href='assets/css/fonticons.css')
+    link(rel='stylesheet', href='assets/fontcss/style.css')
+    link(rel='stylesheet', href='assets/fonts/stylesheet.css')
+    link(rel='stylesheet', href='assets/css/font-awesome.min.css')
+    link(rel='stylesheet', href='assets/css/bootstrap.min.css')
+    // <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
+    // For Plugins external css
+    link(rel='stylesheet', href='assets/css/plugins.css')
+    // Theme custom css
+    link(rel='stylesheet', href='assets/css/style.css')
+    // Theme Responsive css
+    link(rel='stylesheet', href='assets/css/responsive.css')
+    script(src='assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js')
+  body(data-spy='scroll', data-target='#navmenu')
+    //if lt IE 8
+      p.browserupgrade
+        | You are using an 
+        strong outdated
+        |  browser. Please 
+        a(href='http://browsehappy.com/') upgrade your browser
+        |  to improve your experience.
+    .preloader
+      .loaded  
+    // Home page style
+    header.header.navbar-fixed-top
+      .navbar.navbar-default.main-menu
+        .container
+          .navbar-header
+            //
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              </button>
+            a.navbar-brand(href='')
+              img(src='assets/images/logo.png', alt='Logo')
+          .collapse.navbar-collapse
+            form.navbar-form.navbar-right(role='search')
+              .form-group
+                input.form-control(type='text', placeholder='Search')
+                a.btn_search(href='')
+                  i.fa.fa-search
+                a.btn_buy(href='', target='_blank') Buy $21
+              .main-navigation
+                ul#menu.nav.navbar-nav
+                  li
+                    a(href='#home') Home
+                  li
+                    a(href='#about') About
+                  li
+                    a(href='#features') Features
+                  li
+                    a(href='#portfolio') Portfolio
+                  li
+                    a(href='#service') Service
+                  li
+                    a(href='#news') News
+                    ul
+                      li
+                        a(href='#home') Home
+                      li
+                        a(href='#about') About
+                      li
+                        a(href='#features') Features
+                      li
+                        a(href='#portfolio') Portfolio
+                      li
+                        a(href='#service') Service
+                      li
+                        a(href='#news') News
+                      li
+                        a(href='#contact') Contact
+                  li
+                    a(href='#contact') Contact
+    // end of navbar
+    section#home.home
+      .overlay
+        .container
+          .row
+            .col-sm-7.col-sm-offset-5
+              .main_home.wow.fadeInUp(data-wow-duration='700ms')
+                h1 Building bulletproof fucking apps
+                p
+                  | Kickstarter umami Intelligentsia kogi.
+                  | Try-hard flannel literally, chambray blog crucifix put a bird on
+                  | it four dollar toast cardigan scenester aesthet
+    section#about.about
+      .container
+        .row
+          .main_about_area
+            .col-sm-6
+              .single_about_left
+                h2 Super Duper & such
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  | sed do eiusmod tempor incididunt ut labore et dolore magna.
+                a.btn.btn-primary(href='') See More
+            .col-sm-6
+              .single_about_right
+                .single_about_img
+                  img(src='assets/images/feature.png', alt='')
+    section#features.feature
+      .container
+        .row
+          .main_feature_area.sections.border_bottom_raund
+            .col-sm-4
+              .single_feature
+                h3 Design & Features
+                h5.subtitle Flannel ennui narwhal, craft beer twee Vice plaid authentic synth.
+                p
+                  | Kickstarter umami Intelligentsia kogi. Try-hard flannel literally,
+                  | chambray blog crucifix put a bird on it four dollar toast cardigan
+                  | scenester aesthetic sartorial chia messenger bag Pinterest.
+                a.btn.btn-primary(href='') See More
+            .col-sm-4
+              .single_feature
+                h3 Design & Features
+                h5.subtitle Flannel ennui narwhal, craft beer twee Vice plaid authentic synth.
+                p
+                  | Kickstarter umami Intelligentsia kogi. Try-hard flannel literally,
+                  | chambray blog crucifix put a bird on it four dollar toast cardigan
+                  | scenester aesthetic sartorial chia messenger bag Pinterest.
+                a.btn.btn-primary(href='') See More
+            .col-sm-4
+              .single_feature
+                h3 Design & Features
+                h5.subtitle Flannel ennui narwhal, craft beer twee Vice plaid authentic synth.
+                p
+                  | Kickstarter umami Intelligentsia kogi. Try-hard flannel literally,
+                  | chambray blog crucifix put a bird on it four dollar toast cardigan
+                  | scenester aesthetic sartorial chia messenger bag Pinterest.
+                a.btn.btn-primary(href='') See More
+    section#portfolio.portfolio
+      .container
+        .row
+          .main_portfolio_area.text-center
+            .head_title
+              h2 Designed for humans
+              p
+                | Kickstarter umami Intelligentsia kogi. Try-hard flannel literally,
+                | chambray blog crucifix put a bird on it four dollar toast cardigan
+                | scenester aesthetic sartorial chia messenger bag Pinterest.
+                | 3 wolf moon Thundercats Banksy paleo, yr four loko Shoreditch dreamcatcher.
+            .col-sm-10.col-sm-offset-1
+              .main_portfolio_content
+                .single_portfolio
+                  img(src='assets/images/pf1.jpg', alt='')
+                  a.btn.btn-larg(href='') Design win
+                .single_portfolio
+                  img(src='assets/images/pf2.jpg', alt='')
+                  a.btn.btn-larg(href='') Design win
+                .single_portfolio
+                  img(src='assets/images/pf1.jpg', alt='')
+                  a.btn.btn-larg(href='') Design win
+    section#service.service
+      .container
+        .row
+          .main_service_area.sections
+            .col-sm-3
+              .single_service
+                .single_service_icon
+                  i.lnr.lnr-pencil
+                h3
+                  span 01
+                  |  Design
+                p
+                  | Scenester PBR deep v jean shorts typewriter. Sustainable keytar Tumblr, authentic mustache locavore scenester
+                  | gentrify meh banjo fanny pack health goth. Four dollar toast scenester XOXO crucifix,
+                  | mumblecore banh mi yr cold-pressed Bushwick.
+            .col-sm-3
+              .single_service
+                .single_service_icon
+                  i.lnr.lnr-location
+                h3
+                  span 02
+                  |  Refinement
+                p
+                  | Scenester PBR deep v jean shorts typewriter. Sustainable keytar Tumblr, authentic mustache locavore scenester
+                  | gentrify meh banjo fanny pack health goth. Four dollar toast scenester XOXO crucifix,
+                  | mumblecore banh mi yr cold-pressed Bushwick.
+            .col-sm-3
+              .single_service
+                .single_service_icon
+                  i.icon.icon-brush
+                h3
+                  span 03
+                  |  Dive In
+                p
+                  | Scenester PBR deep v jean shorts typewriter. Sustainable keytar Tumblr, authentic mustache locavore scenester
+                  | gentrify meh banjo fanny pack health goth. Four dollar toast scenester XOXO crucifix,
+                  | mumblecore banh mi yr cold-pressed Bushwick.
+            .col-sm-3
+              .single_service
+                .single_service_icon
+                  i.icon.icon-search4
+                h3
+                  span 04
+                  |  Research
+                p
+                  | Scenester PBR deep v jean shorts typewriter. Sustainable keytar Tumblr, authentic mustache locavore scenester
+                  | gentrify meh banjo fanny pack health goth. Four dollar toast scenester XOXO crucifix,
+                  | mumblecore banh mi yr cold-pressed Bushwick.
+    section#news.news
+      .row
+        .top_new_one_left
+          .col-sm-12.no-padding
+            .single_new_top_one
+              h3
+                i.lnr.lnr-cloud-download
+                |  Conectivity
+              h5.subtitle
+                | Flannel ennui narwhal, craft beer twee Vice plaid authentic synth Intelligentsia stumptown gluten-free drinking vinegar Schlitz mixtape.
+              p
+                | Kickstarter umami Intelligentsia kogi. Try-hard flannel literally, chambray blog crucifix put a bird on it four dollar toast cardigan scenester aesthetic sartorial chia messenger bag Pinterest.
+        .col-sm-7.no-padding
+          .top_news_right_img
+            img(src='assets/images/new1.jpg', alt='')
+      .new_two_area
+        .single_new_two
+          .row
+            .col-sm-5.no-padding
+              .singel_two_left_vedio
+                a(href='')
+                  i.fa.fa-play
+                  img(src='', alt='')
+            .col-sm-7.no-padding
+              .single_two_right_content
+                .new_data 12th June 2015
+                p
+                  | Lorem ipsum dolor sit amet, cotur adipisicing elit sed do eiusmod
+                  | tempor incididunt ut labore et dolore
+                .new_author
+                  img(src='assets/images/na1.jpg', alt='')
+                  a(href='') Blaz Robar
+      .news_three_area
+        .row
+          .col-sm-5.col-xs-12.no-padding
+            .single_new_three_left
+              h6 Lorem ipsum dolor sit amet, consectetur adipisicing elit
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                | labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              .new_three_comments
+                a(href='') 92
+                a.coments(href='') Comments
+          .col-sm-7.col-xs-12.no-padding
+            .single_new_three_right
+              img(src='assets/images/newthree.jpg', alt='')
+      .news_four_area
+        .row
+          .col-sm-5.no-padding
+            .single_news_four_area
+              .single_news_four
+                p
+                  | Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Nisi ut aliquip ex ea commodo.
+                .new_author
+                  img(src='assets/images/na1.jpg', alt='')
+                  a(href='') Blaz Robar
+    section#contact.footer_widget
+      .container
+        .row
+          .main_widget
+            .col-sm-7
+              .single_widget_left_content
+                .footer_title_left
+                  p.footer_title Get in touch
+                  p
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    | magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    | ex ea commodo consequat.
+                .row
+                  .col-sm-3
+                    .single_widget.wow.fadeIn(data-wow-duration='800ms')
+                      p.footer_title Resources
+                      ul
+                        li
+                          a(href='') Tour
+                        li
+                          a(href='') Customers
+                        li
+                          a(href='') Pricing and Plans
+                        li
+                          a(href='') New Features
+                        li
+                          a(href='') Education
+                  .col-sm-3
+                    .single_widget.wow.fadeIn(data-wow-duration='800ms')
+                      p.footer_title Features
+                      ul
+                        li
+                          a(href='') Tour
+                        li
+                          a(href='') Customers
+                        li
+                          a(href='') Pricing and Plans
+                        li
+                          a(href='') New Features
+                        li
+                          a(href='') Education
+                  .col-sm-3
+                    .single_widget.wow.fadeIn(data-wow-duration='800ms')
+                      p.footer_title How To’s
+                      ul
+                        li
+                          a(href='') Tour
+                        li
+                          a(href='') Customers
+                        li
+                          a(href='') Pricing and Plans
+                        li
+                          a(href='') New Features
+                        li
+                          a(href='') Education
+            .col-sm-5
+              .single_widget_right.wow.fadeInRight(data-wow-duration='1000ms')
+                p.footer_title Stay in touch
+                form.navbar-form(role='search')
+                  .form-group
+                    input.form-control(type='text', placeholder='Search')
+                    a.submit_btn(type='submit')
+                      span.fa.fa-check
+                p
+                  | We don’t send spam. Actually, who are we kiding, we’ll spam
+                  | the shit out of you’r inbox
+    footer#footer.footer
+      .container
+        .row
+          .col-md-12.col-sm-12
+            .copyright_text.text-center
+              p.wow.fadeInRight(data-wow-duration='1s')
+                | Made with 
+                i.fa.fa-heart
+                |  by 
+                a(href='http://bootstrapthemes.co') Bootstrap Themes
+                | 2016. All Rights Reserved
+    // START SCROLL TO TOP
+    .scrollup
+      a(href='#')
+        i.fa.fa-chevron-up
+    script(src='assets/js/vendor/jquery-1.11.2.min.js')
+    script(src='assets/js/vendor/bootstrap.min.js')
+    script(src='assets/js/vendor/isotope.min.js')
+    script(src='assets/js/jquery.easypiechart.min.js')
+    script(src='assets/js/jquery.mixitup.min.js')
+    script(src='assets/js/jquery.easing.1.3.js')
+    script(src='assets/js/jquery.slicknav.min.js')
+    script(src='assets/js/plugins.js')
+    script(src='assets/js/main.js')

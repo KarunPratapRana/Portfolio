@@ -1,0 +1,299 @@
+doctype html
+//
+  Author: W3layouts
+  Author URL: http://w3layouts.com
+  License: Creative Commons Attribution 3.0 Unported
+  License URL: http://creativecommons.org/licenses/by/3.0/
+html(lang='en')
+  head
+    title
+      | My Profile a Personal Portfolio
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    meta(name='keywords', content='My Profile')
+    // css files
+    link(href='portfolio/css/bootstrap.min.css', rel='stylesheet', type='text/css', media='all')
+    link(href='portfolio/css/cobox.css', rel='stylesheet', type='text/css')
+    link(href='portfolio/css/portfolio.css', rel='stylesheet', type='text/css', media='all')
+    link(href='portfolio/css/style.css', rel='stylesheet', type='text/css', media='all')
+    // /css files
+    // font links
+    link(href='//fonts.googleapis.com/css?family=Quicksand:400,700,300', rel='stylesheet', type='text/css')
+    link(href='//fonts.googleapis.com/css?family=Cinzel:400,700,900', rel='stylesheet', type='text/css')
+    // /font links
+    // js files
+    script(src='portfolio/js/modernizr.custom.js')
+    // /js files
+  body#myPage(data-spy='scroll', data-target='.navbar', data-offset='60')
+    .navbar-wrapper
+      .container
+        nav.navbar.navbar-inverse.navbar-static-top
+          .container
+            .navbar-header
+              button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+                span.sr-only Toggle navigation
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+              a.navbar-brand(href='index.html') My Profile
+            #navbar.navbar-collapse.collapse.navbar-right
+              ul.nav.navbar-nav.link-effect
+                li.active
+                  a(href='#') Home
+                li
+                  a(href='#about') About
+                li
+                  a(href='#portfolio') Portfolio
+                li
+                  a(href='#gallery') Gallery
+                li
+                  a(href='#contact') Contact
+    // Banner
+    .banner
+      ul#slider.rslides
+        li
+          .banner-info
+            h3 Business Mantra
+            span.line1
+            p If you think you Can! you Can.
+            span.line2
+            .social-icons
+              a(href='https://en-gb.facebook.com/people/Ajay-Kumar/100007421958128', target='_blank')
+                span.facebook
+              a(href='https://twitter.com/AjayAp0?lang=en', target='_blank')
+                span.twitter
+              a(href='https://www.linkedin.com/in/ajay-pandey-242355a5/', target='_blank')
+                span.linkedin
+              a(href='https://plus.google.com/u/0/114906591500326948583', target='_blank')
+                span.googleplus
+        li
+          .banner-info
+            h3 Success Mantra
+            span.line1
+            p Hard work is key to success.
+            span.line2
+            .social-icons
+              a(href='https://en-gb.facebook.com/people/Ajay-Kumar/100007421958128', target='_blank')
+                span.facebook
+              a(href='https://twitter.com/AjayAp0?lang=en', target='_blank')
+                span.twitter
+              a(href='https://www.linkedin.com/in/ajay-pandey-242355a5/', target='_blank')
+                span.linkedin
+              a(href='https://plus.google.com/u/0/114906591500326948583', target='_blank')
+                span.googleplus
+        li
+          .banner-info
+            h3 Life Mantra
+            span.line1
+            p Life should be full of surprices.
+            span.line2
+            .social-icons
+              a(href='https://en-gb.facebook.com/people/Ajay-Kumar/100007421958128', target='_blank')
+                span.facebook
+              a(href='https://twitter.com/AjayAp0?lang=en', target='_blank')
+                span.twitter
+              a(href='https://www.linkedin.com/in/ajay-pandey-242355a5/', target='_blank')
+                span.linkedin
+              a(href='https://plus.google.com/u/0/114906591500326948583', target='_blank')
+                span.googleplus  
+
+
+    // /Banner
+    // About
+    #about.about-me
+      h3.text-center.slideanim About My Services
+      .container
+        .row
+          .col-md-4.col-xs-12
+            .mydetails.slideanim.text-center
+              img.img-circle.img-responsive(src='portfolio/images/man.jpg', alt='Generic placeholder image', width='200', height='200')
+              h3 Ajay Pandey
+              p Finance & Accountant
+              .social-icons
+              a(href='https://en-gb.facebook.com/people/Ajay-Kumar/100007421958128', target='_blank')
+                span.facebook
+              a(href='https://twitter.com/AjayAp0?lang=en', target='_blank')
+                span.twitter
+              a(href='https://www.linkedin.com/in/ajay-pandey-242355a5/', target='_blank')
+                span.linkedin
+              a(href='https://plus.google.com/u/0/114906591500326948583', target='_blank')
+                span.googleplus
+          .col-md-8.col-xs-12
+            .myskills.slideanim
+              h3.text-center My Services Info
+              p.skill-text
+                | I offer a wide range of services to our individual and business clients. Being a relatively small firm, we are able to offer our clients personalized quality service. Below, we have listed the services that we offer to our clients along with a brief description.
+              .skill-info
+                .table-responsive
+                  table.table
+                    tbody
+                      tr
+                        td
+                          h4 Audits, Reviews and Compilations
+                        td
+                          h4 Tax Services
+                      tr
+                        td
+                          h4 Bookkeeping/Write-Up
+                        td
+                          h4 Tax Planning
+                      tr
+                        td
+                          h4 Accounting Services
+                        td
+                          h4 Tax Preparation
+                      tr
+                        td
+                          h4 Manage E-commerce
+                        td
+                          h4 Buying & Selling a Business
+                      tr
+                        td
+                          h4 GST registration & GSTIR
+                        td
+                          h4 Payroll Services
+    // /About
+    // Portfolio
+    #portfolio.myportfolio
+      h3.text-center.slideanim My Portfolio
+      p.text-center.slideanim Demo of Projects and works undertaken by me.
+      section#grid3d.vertical
+        .grid-wrap
+          .grid
+            figure
+              a(href='portfolio/images/011.jpg', target='_blank')
+                img.slideanim(src='portfolio/images/011.jpg', alt='img011')
+            figure
+              a(href='portfolio/images/012.jpg', target='_blank')
+                img.slideanim(src='portfolio/images/012.jpg', alt='img012')
+            figure
+              a(href='portfolio/images/011.jpg', target='_blank')
+                img.slideanim(src='portfolio/images/011.jpg', alt='img013')
+    // /Portfolio
+    // Gallery
+    #gallery.mygallery
+      h3.text-center.slideanim My Gallery
+      .text-center
+        a(href='#gallery', title='My Image Gallery')
+          img.img-responsive.slideanim(src='portfolio/images/me111.jpg', alt='example-1')
+        a(href='#gallery', title='My Image Gallery')
+          img.img-responsive.slideanim(src='portfolio/images/me222.jpg', alt='example-2')
+        a(href='#gallery', title='My Image Gallery')
+          img.img-responsive.slideanim(src='portfolio/images/me333.jpg', alt='example-3')
+        a(href='#gallery', title='My Image Gallery')
+          img.img-responsive.slideanim(src='portfolio/images/me444.jpg', alt='example-3')
+        a(href='#gallery', title='My Image Gallery')
+          img.img-responsive.slideanim(src='portfolio/images/me555.jpg', alt='example-3')
+        a(href='#gallery', title='My Image Gallery')
+          img.img-responsive.slideanim(src='portfolio/images/me777.jpg', alt='example-3')
+        a(href='#gallery', title='My Image Gallery')
+          img.img-responsive.slideanim(src='portfolio/images/me888.jpg', alt='example-3')
+        a(href='#gallery', title='My Image Gallery')
+          img.img-responsive.slideanim(src='portfolio/images/me999.jpg', alt='example-3')
+        a(href='#gallery', title='My Image Gallery')
+          img.img-responsive.slideanim(src='portfolio/images/me000.jpg', alt='example-3')
+    // Gallery
+    // footer
+    #contact.contact-me
+      h3.text-center.slideanim Contact Me
+      p.text-center.slideanim Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      .container
+        footer
+          .row
+            .col-md-6.slideanim
+              .contact-details
+                form(action='#', method='post')
+                  .row
+                    .col-sm-12.form-group
+                      input#name.form-control(name='name', placeholder='Name', type='text', required='')
+                    .col-sm-12.form-group
+                      input#email.form-control(name='email', placeholder='Email', type='email', required='')
+                  textarea#comments.form-control(name='comments', placeholder='Comment', rows='5')
+                  br
+                  .row
+                    .col-sm-12.form-group
+                      button.btn.btn-default.btn-lg(type='submit')
+                        | Send 
+                        span.glyphicon.glyphicon-menu-right
+            .col-md-6.slideanim
+              .contact-info
+                h4 Contact Info
+                p This is my address Info, You can contact me. I am available for your service. Thanks
+                .footer-info
+                  div
+                    i.glyphicon.glyphicon-globe
+                    p.p1 G-179, Sector 22 
+                    p.p2 Noida, UttarPradesh
+                  div
+                    i.glyphicon.glyphicon-phone-alt
+                    p.p1 +91 9643862867
+                    p.p2 +91 9871962867
+                  div
+                    i.glyphicon.glyphicon-envelope
+                    p.p1
+                      a(href='mailto:ajaykumarpandeya@gmail.com') ajaykumarpandeya@gmail.com
+                h5 Thanks & Regards
+                p Please feel free to contact. 24X7 i ll try to assist you.
+          hr
+          .copyright
+            p.text-center
+              | © 2018 Website. All Rights Reserved | Design by 
+              a(href='#') kprRana
+          a(href='#myPage', title='To Top')
+            span.glyphicon.glyphicon-chevron-up
+    // /footer
+    // js files
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+    script(src='portfolio/js/bootstrap.min.js')
+    // js files for banner slider
+    script(src='portfolio/js/responsiveslides.min.js')
+    script.
+      $(window).load(function() {
+      // Slideshow for banner
+      $("#slider").responsiveSlides({
+      maxwidth: 1920,
+      speed: 1000
+      });
+      });
+    // /js files for banner slider
+    // js files for portfolio
+    script(src='portfolio/js/classie.js')
+    script(src='portfolio/js/helper.js')
+    script(src='portfolio/js/grid3d.js')
+    script.
+      new grid3D( document.getElementById( 'grid3d' ) );
+    // /js files for portfolio
+    // js files for gallery
+    script(type='text/javascript', src='portfolio/js/cobox.js')
+    // /js files for gallery
+    // js for smooth scrolling
+    script.
+      $(document).ready(function(){
+      // Add smooth scrolling to all links in navbar + footer link
+      $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+      // Store hash
+      var hash = this.hash;
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+      scrollTop: $(hash).offset().top
+      }, 900, function(){
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+      });
+      });
+      })
+    // /js for smooth scrolling
+    // js for sliding
+    script.
+      $(window).scroll(function() {
+      $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+      var winTop = $(window).scrollTop();
+      if (pos < winTop + 600) {
+      $(this).addClass("slide");
+      }
+      });
+      });
+    // /js for sliding
+    // /js files

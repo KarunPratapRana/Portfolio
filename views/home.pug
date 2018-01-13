@@ -1,0 +1,397 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Modus
+    meta(name='description', content='')
+    meta(name='author', content='')
+    // Bootstrap
+    link(rel='stylesheet', type='text/css', href='css/bootstrap.css')
+    link(rel='stylesheet', type='text/css', href='fonts/font-awesome/css/font-awesome.css')
+    //
+      Stylesheet
+      ==================================================
+    link(rel='stylesheet', type='text/css', href='css/style.css')
+    link(rel='stylesheet', type='text/css', href='css/prettyPhoto.css')
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300', rel='stylesheet', type='text/css')
+    script(type='text/javascript', src='js/modernizr.custom.js')
+    // HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+      script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+  body#page-top(data-spy='scroll', data-target='.navbar-fixed-top')
+    #preloader
+      #status
+        img(src='img/preloader.gif', height='64', width='64', alt='')
+    // Navigation
+    nav.navbar.navbar-custom.navbar-fixed-top(role='navigation')
+      .container
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-main-collapse')
+            i.fa.fa-bars
+          a.navbar-brand.page-scroll(href='#page-top')
+            i.fa.fa-paper-plane-o
+            |  Modus
+        // Collect the nav links, forms, and other content for toggling
+        .collapse.navbar-collapse.navbar-right.navbar-main-collapse
+          ul.nav.navbar-nav
+            // Hidden li included to remove active class from about link when scrolled up past about section
+            li.hidden
+              a(href='#page-top')
+            li
+              a.page-scroll(href='#about') About
+            li
+              a.page-scroll(href='#services') Services
+            li
+              a.page-scroll(href='#works') Portfolio
+            li
+              a.page-scroll(href='#team') Team
+            li
+              a.page-scroll(href='#testimonials') Testimonials
+            li
+              a.page-scroll(href='#contact') Contact
+        // /.navbar-collapse
+      // /.container
+    // Header
+    #intro
+      .intro-body
+        .container
+          .row
+            .col-md-10.col-md-offset-1
+              h1
+                | We are 
+                span.brand-heading Modus
+              p.intro-text A full-service digital agency that loves what we do
+              a.btn.btn-default.page-scroll(href='#about') Learn More
+    // About Section
+    #about
+      .container
+        .section-title.text-center.center
+          h2 About us
+          hr
+        .row
+          .col-md-4
+            img.img-responsive(src='img/about.jpg')
+          .col-md-4
+            .about-text
+              h4 Who We Are
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum.
+          .col-md-4
+            .about-text
+              h4 What We Do
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam.
+              ul
+                li Lorem ipsum dolor sit amet
+                li Consectetur adipiscing commodo
+                li Duis sed dapibus leo sed dapibus
+                li Sed commodo nibh ante bibendum
+    // Services Section
+    #services.text-center
+      .container
+        .section-title.center
+          h2 Our Services
+          hr
+        .space
+        .row
+          .col-md-3.col-sm-6
+            .service
+              i.fa.fa-desktop
+              h3 Web Design
+              p
+                | Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.
+          .col-md-3.col-sm-6
+            .service
+              i.fa.fa-cogs
+              h3 Web Development
+              p
+                | Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque.
+          .col-md-3.col-sm-6
+            .service
+              i.fa.fa-tablet
+              h3 App Design
+              p
+                | Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.
+          .col-md-3.col-sm-6
+            .service
+              i.fa.fa-html5
+              h3 PSD to HTML5
+              p
+                | Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque.
+        .space
+        .row
+          .col-md-3.col-sm-6
+            .service
+              i.fa.fa-wordpress
+              h3 WordPress
+              p
+                | Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.
+          .col-md-3.col-sm-6
+            .service
+              i.fa.fa-bullhorn
+              h3 Marketing
+              p
+                | Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque.
+          .col-md-3.col-sm-6
+            .service
+              i.fa.fa-rocket
+              h3 Branding
+              p
+                | Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.
+          .col-md-3.col-sm-6
+            .service
+              i.fa.fa-leaf
+              h3 Print Design
+              p
+                | Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque.
+    // Portfolio Section
+    #works
+      .container
+        // Container
+        .section-title.text-center.center
+          h2 Our Portfolio
+          hr
+          .clearfix
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamcommodo nibh ante facilisis.
+        .categories
+          ul.cat
+            li
+              ol.type
+                li
+                  a.active(href='#', data-filter='*') All
+                li
+                  a(href='#', data-filter='.lorem') Web Design
+                li
+                  a(href='#', data-filter='.consectetur') Web Development
+                li
+                  a(href='#', data-filter='.dapibus') Branding
+          .clearfix
+        .row
+          .portfolio-items
+            .col-xs-6.col-sm-6.col-md-3.col-lg-3.lorem
+              .portfolio-item
+                .hover-bg
+                  a(href='img/portfolio/01.jpg', title='Project description', rel='prettyPhoto')
+                    .hover-text
+                      h4 Project Title
+                      p Web Design
+                    img.img-responsive(src='img/portfolio/01.jpg', alt='Project Title')
+            .col-xs-6.col-sm-6.col-md-3.col-lg-3.consectetur
+              .portfolio-item
+                .hover-bg
+                  a(href='img/portfolio/02.jpg', title='Project description', rel='prettyPhoto')
+                    .hover-text
+                      h4 Project Title
+                      p Web Development
+                    img.img-responsive(src='img/portfolio/02.jpg', alt='Project Title')
+            .col-xs-6.col-sm-6.col-md-3.col-lg-3.lorem
+              .portfolio-item
+                .hover-bg
+                  a(href='img/portfolio/03.jpg', title='Project description', rel='prettyPhoto')
+                    .hover-text
+                      h4 Project Title
+                      p Web Design
+                    img.img-responsive(src='img/portfolio/03.jpg', alt='Project Title')
+            .col-xs-6.col-sm-6.col-md-3.col-lg-3.lorem
+              .portfolio-item
+                .hover-bg
+                  a(href='img/portfolio/04.jpg', title='Project description', rel='prettyPhoto')
+                    .hover-text
+                      h4 Project Title
+                      p Web Design
+                    img.img-responsive(src='img/portfolio/04.jpg', alt='Project Title')
+            .col-xs-6.col-sm-6.col-md-3.col-lg-3.consectetur
+              .portfolio-item
+                .hover-bg
+                  a(href='img/portfolio/05.jpg', title='Project description', rel='prettyPhoto')
+                    .hover-text
+                      h4 Project Title
+                      p Web Development
+                    img.img-responsive(src='img/portfolio/05.jpg', alt='Project Title')
+            .col-xs-6.col-sm-6.col-md-3.col-lg-3.dapibus
+              .portfolio-item
+                .hover-bg
+                  a(href='img/portfolio/06.jpg', title='Project description', rel='prettyPhoto')
+                    .hover-text
+                      h4 Project Title
+                      p Branding
+                    img.img-responsive(src='img/portfolio/06.jpg', alt='Project Title')
+            .col-xs-6.col-sm-6.col-md-3.col-lg-3.dapibus.consectetur
+              .portfolio-item
+                .hover-bg
+                  a(href='img/portfolio/07.jpg', title='Project description', rel='prettyPhoto')
+                    .hover-text
+                      h4 Project Title
+                      p Web Development, Branding
+                    img.img-responsive(src='img/portfolio/07.jpg', alt='Project Title')
+            .col-xs-6.col-sm-6.col-md-3.col-lg-3.lorem
+              .portfolio-item
+                .hover-bg
+                  a(href='img/portfolio/08.jpg', title='Project description', rel='prettyPhoto')
+                    .hover-text
+                      h4 Project Title
+                      p Web Design
+                    img.img-responsive(src='img/portfolio/08.jpg', alt='Project Title')
+    // Team Section
+    #team.text-center
+      .container
+        .section-title.center
+          h2 Meet the team
+          hr
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamcommodo nibh ante facilisis.
+        #row
+          .col-xs-6.col-md-3.col-sm-6
+            .thumbnail
+              img.img-thumbnail.team-img(src='img/team/01.jpg', alt='...')
+              .caption
+                h3 John Doe
+                p Founder / CEO
+          .col-xs-6.col-md-3.col-sm-6
+            .thumbnail
+              img.img-thumbnail.team-img(src='img/team/02.jpg', alt='...')
+              .caption
+                h3 Mike Doe
+                p Web Designer
+          .col-xs-6.col-md-3.col-sm-6
+            .thumbnail
+              img.img-thumbnail.team-img(src='img/team/03.jpg', alt='...')
+              .caption
+                h3 Jane Doe
+                p Creative Director
+          .col-xs-6.col-md-3.col-sm-6
+            .thumbnail
+              img.img-thumbnail.team-img(src='img/team/04.jpg', alt='...')
+              .caption
+                h3 Larry Show
+                p Project Manager
+    // Testimonials Section
+    #testimonials.text-center
+      .container
+        .section-title.center
+          h2 What our clients say
+          hr
+        .row
+          .col-md-10.col-md-offset-1
+            .row.testimonials
+              .col-sm-4
+                blockquote
+                  i.fa.fa-quote-left
+                  p
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elitduis sed dapibus leo nec ornare.
+                  .clients-name
+                    p
+                      strong John Doe
+                      br
+                      em CEO, Company Inc.
+              .col-sm-4
+                blockquote
+                  i.fa.fa-quote-left
+                  p
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elitduis sed dapibus leo nec ornare.
+                  .clients-name
+                    p
+                      strong Jane Doe
+                      br
+                      em CEO, Company Inc.
+              .col-sm-4
+                blockquote
+                  i.fa.fa-quote-left
+                  p
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elitduis sed dapibus leo nec ornare.
+                  .clients-name
+                    p
+                      strong Chris Smith
+                      br
+                      em CEO, Company Inc.
+    // Contact Section
+    #contact.text-center
+      .container
+        .section-title.center
+          h2 Contact us
+          hr
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamcommodo nibh ante facilisis.
+        .col-md-8.col-md-offset-2
+          .col-md-4
+            .contact-item
+              i.fa.fa-map-marker.fa-2x
+              p
+                | 4321 California St,
+                br
+                |             San Francisco, CA 12345
+          .col-md-4
+            .contact-item
+              i.fa.fa-envelope-o.fa-2x
+              p info@company.com
+          .col-md-4
+            .contact-item
+              i.fa.fa-phone.fa-2x
+              p
+                | +1 123 456 1234
+                br
+                |             +1 321 456 1234
+          .clearfix
+        .col-md-8.col-md-offset-2
+          h3 Leave us a message
+          form#contactForm(name='sentMessage', novalidate='')
+            .row
+              .col-md-6
+                .form-group
+                  input#name.form-control(type='text', placeholder='Name', required='required')
+                  p.help-block.text-danger
+              .col-md-6
+                .form-group
+                  input#email.form-control(type='email', placeholder='Email', required='required')
+                  p.help-block.text-danger
+            .form-group
+              textarea#message.form-control(name='message', rows='4', placeholder='Message', required='')
+              p.help-block.text-danger
+            #success
+            button.btn.btn-default(type='submit') Send Message
+          .social
+            h3 Follow us
+            ul
+              li
+                a(href='#')
+                  i.fa.fa-facebook
+              li
+                a(href='#')
+                  i.fa.fa-twitter
+              li
+                a(href='#')
+                  i.fa.fa-dribbble
+              li
+                a(href='#')
+                  i.fa.fa-github
+              li
+                a(href='#')
+                  i.fa.fa-instagram
+              li
+                a(href='#')
+                  i.fa.fa-linkedin
+    #footer
+      .container
+        p
+          | Copyright © Modus. Designed by 
+          a(href='http://www.templatewire.com', rel='nofollow') TemplateWire
+    // jQuery (necessary for Bootstrap's JavaScript plugins)
+    script(type='text/javascript', src='js/jquery.1.11.1.js')
+    // Include all compiled plugins (below), or include individual files as needed
+    script(type='text/javascript', src='js/bootstrap.js')
+    script(type='text/javascript', src='js/SmoothScroll.js')
+    script(type='text/javascript', src='js/jquery.prettyPhoto.js')
+    script(type='text/javascript', src='js/jquery.isotope.js')
+    script(type='text/javascript', src='js/jquery.parallax.js')
+    script(type='text/javascript', src='js/jqBootstrapValidation.js')
+    script(type='text/javascript', src='js/contact_me.js')
+    //
+      Javascripts
+      ==================================================
+    script(type='text/javascript', src='js/main.js')
