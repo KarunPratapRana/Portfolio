@@ -20,6 +20,6 @@ app.get('/', function (req, res) {
 app.post('/contact_me', controllers.user.post);
 app.get('/contact_me', controllers.user.get);
 
-app.listen(5000, function(){
-	console.log('Now my server is hosted at localhost:5000')
+app.listen(8080, function(){
+	console.log('Now server is runnung');
 });
