@@ -15,11 +15,12 @@ app.use(express.static('public', { maxAge: 24*3600000 }))
 
 app.get('/', function (req, res) {
   console.log("Welcome to Ajay's Portfolio");
-  res.render('profile')
+  res.render('profile');
 })
 app.post('/contact_me', controllers.user.post);
 app.get('/contact_me', controllers.user.get);
 
-app.listen(8080, function(){
-	console.log('Now server is runnung');
+const port = process.env.PORT || 3000;
+app.listen(port, function(){
+	console.log('server is runnung at port ' +port);
 });
