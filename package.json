@@ -7,7 +7,7 @@
     "start": "node server.js",
     "test":"mocha"
   },
-  "author": "Karun Pratap",
+  "author": "Karun Pratap Rana",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.2",
