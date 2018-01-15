@@ -57,7 +57,7 @@ body {
 .navbar-wrapper {
 	background-color: #a1b3a4;
 	position: fixed;
-	top: -3%;
+	top: 0;
 	right: 0;
 	left: 0;
 	z-index: 20;
@@ -273,7 +273,7 @@ span.line2 {
 	padding:0;
 	margin:0 auto;
 }
-.about-me h3 {
+.about-me h1 {
 	color:#A1B3A4;
 	font-size:30px;
 	font-family: 'Cinzel', serif;
@@ -435,7 +435,7 @@ span.shortline5 {
 	padding:0;
 	margin:0 auto;
 }
-.myportfolio h3 {
+.myportfolio h1 {
 	color:#A1B3A4;
 	font-size:30px;
 	font-family: 'Cinzel', serif;
@@ -455,7 +455,7 @@ span.shortline5 {
 	padding:0;
 	margin:0 auto;
 }
-.mygallery h3 {
+.mygallery h1 {
 	color:#A1B3A4;
 	font-size:30px;
 	font-family: 'Cinzel', serif;
@@ -489,7 +489,7 @@ span.shortline5 {
 	position:relative;
 	margin:0 auto;
 }
-.contact-me h3 {
+.contact-me h1 {
 	color:#A1B3A4;
 	font-size:30px;
 	font-family: 'Cinzel', serif;
