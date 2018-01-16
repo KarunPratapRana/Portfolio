@@ -273,7 +273,7 @@ span.line2 {
 	padding:0;
 	margin:0 auto;
 }
-.about-me h1 {
+.about-me h3 {
 	color:#A1B3A4;
 	font-size:30px;
 	font-family: 'Cinzel', serif;
@@ -435,7 +435,7 @@ span.shortline5 {
 	padding:0;
 	margin:0 auto;
 }
-.myportfolio h1 {
+.myportfolio h3 {
 	color:#A1B3A4;
 	font-size:30px;
 	font-family: 'Cinzel', serif;
@@ -455,7 +455,7 @@ span.shortline5 {
 	padding:0;
 	margin:0 auto;
 }
-.mygallery h1 {
+.mygallery h3 {
 	color:#A1B3A4;
 	font-size:30px;
 	font-family: 'Cinzel', serif;
@@ -489,7 +489,7 @@ span.shortline5 {
 	position:relative;
 	margin:0 auto;
 }
-.contact-me h1 {
+.contact-me h3 {
 	color:#A1B3A4;
 	font-size:30px;
 	font-family: 'Cinzel', serif;
