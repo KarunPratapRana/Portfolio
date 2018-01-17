@@ -5,11 +5,12 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "test":"mocha"
+    "test": "mocha"
   },
   "author": "Karun Pratap Rana",
   "license": "ISC",
   "dependencies": {
+    "compression": "^1.7.1",
     "express": "^4.16.2",
     "pug": "^2.0.0-rc.4"
   }

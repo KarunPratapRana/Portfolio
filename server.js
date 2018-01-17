@@ -1,9 +1,11 @@
 var express = require('express');
+var compression = require('compression')
 var controllers = require('./controllers');
 var path = require('path');
 var bodyParser = require('body-parser');
 
 var app = express();
+app.use(compression())
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
  
@@ -22,7 +24,7 @@ var options = {
     res.set({
       'ETag': 'strong',
       'Expires': 'Thu, 15 Apr 2018 20:00:00 GMT',
-      'Accept-Encoding': 'gzip, deflate'
+      'Accept-Encoding': 'gzip'
     })
   }
 }
