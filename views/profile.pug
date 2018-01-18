@@ -44,7 +44,10 @@ html(lang='en')
     // js files
     script(src='portfolio/js/modernizr.custom.js')
     // /js files
-    script(src='portfolio/js/jsonldSchema.js')
+    script(src='portfolio/js/jsonldSchema.js').
+    script(type="application/ld+json").
+      { "@context": "http://schema.org", "@type": "Person", "address": { "@type": "PostalAddress", "addressLocality": "G-179 sector 22", "addressRegion": "Noida", "postalCode": "201301", "streetAddress": "Near Mother Dairy and Shiv Mandir Sector 22" }, "email": "ajaykumarpandeya@gmail.com", "image": "https://ajay-financialadvisor.herokuapp.com/portfolio/images/man.jpg", "jobTitle": "Finance & Accountant", "name": "Ajay Kumar Pandey", "gender": "male", "nationality": "Indian", "telephone": "9643862867", "url": "https://ajay-financialadvisor.herokuapp.com/", "sameAs" : [ "https://www.facebook.com/", "https://www.linkedin.com/", "http://twitter.com/", "http://instagram.com/", "https://plus.google.com/"] }
+
   body#myPage(data-spy='scroll', data-target='.navbar', data-offset='60')
     .navbar-wrapper
       .container
@@ -259,9 +262,9 @@ html(lang='en')
                   div
                     i.glyphicon.glyphicon-envelope
                     p.p1
-                      a(href='mailto:ajaykumarpandeya@gmail.com') ajaykumarpandeya@gmail.com
+                      a(href='mailto:ajaykumarpandeyaATgmailDOTcom', onclick="this.href=this.href\.replace(/AT/,'@')\.replace(/DOT/,'.')") Contact Me #1
                     p.p2
-                      a(href='mailto:ajaybani05@gmail.com') ajaybani05@gmail.com
+                      a(href='mailto:ajaybani05ATgmailDOTcom', onclick="this.href=this.href\.replace(/AT/,'@')\.replace(/DOT/,'.')") Contact Me #2
                 h5 Thanks & Regards
                 p Please feel free to contact. 24X7 i ll try to assist you.
           hr
