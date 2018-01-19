@@ -2,3 +2,5 @@ RewriteEngine On
 RewriteBase /
 RewriteCond %{HTTP_HOST} ^ajay-financialadvisor.herokuapp.com [NC]
 RewriteRule ^(.*)$ http://ajay-financialadvisor.herokuapp.com//$1 [L,R=301]
+RewriteCond %{HTTP_HOST} ^ajay-financialadvisor.herokuapp.com$
+RewriteRule ^/?$ "http\:\/\/ajay-financialadvisor\.herokuapp\.com\/" [R=301,L]
