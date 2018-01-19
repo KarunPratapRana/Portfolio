@@ -3,6 +3,7 @@ var compression = require('compression')
 var controllers = require('./controllers');
 var path = require('path');
 var bodyParser = require('body-parser');
+var cache = require('./middleware/cacheMiddleware');
 
 var app = express();
 app.use(compression())
@@ -30,12 +31,12 @@ var options = {
 }
 app.use(express.static('public', options))
 
-app.get('/', function (req, res) {
+app.get('/', cache(10), function (req, res) {
   console.log("Welcome to Ajay's Portfolio");
   res.render('profile');
 })
 app.post('/contact_me', controllers.user.post);
-app.get('/contact_me', controllers.user.get);
+app.get('/contact_me', cache(10), controllers.user.get);
 
 const port = process.env.PORT || 3000;
 app.listen(port, function(){
