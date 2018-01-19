@@ -71,55 +71,59 @@ html(lang='en')
                 li
                   a(href='#gallery') Gallery
                 li
+                  a(href='#videos') Videos
+                li
                   a(href='#contact') Contact
     // Banner
-    .banner
-      ul#slider.rslides
-        li
-          .banner-info
-            h2 Business Mantra
-            span.line1
-            p If you think you Can! you Can.
-            span.line2
-            .social-icons
-              a(href='https://www.facebook.com/people/Ajay-Kumar/100007421958128', target='_blank')
-                span.facebook
-              a(href='https://www.twitter.com/AjayAp0?lang=en', target='_blank')
-                span.twitter
-              a(href='https://www.linkedin.com/in/ajay-pandey-242355a5/', target='_blank')
-                span.linkedin
-              a(href='https://www.plus.google.com/u/0/114906591500326948583', target='_blank')
-                span.googleplus
-        li
-          .banner-info
-            h2 Success Mantra
-            span.line1
-            p Hard work is key to success.
-            span.line2
-            .social-icons
-              a(href='https://www.facebook.com/people/Ajay-Kumar/100007421958128', target='_blank')
-                span.facebook
-              a(href='https://www.twitter.com/AjayAp0?lang=en', target='_blank')
-                span.twitter
-              a(href='https://www.linkedin.com/in/ajay-pandey-242355a5/', target='_blank')
-                span.linkedin
-              a(href='https://www.plus.google.com/u/0/114906591500326948583', target='_blank')
-                span.googleplus
-        li
-          .banner-info
-            h2 Life Mantra
-            span.line1
-            p Life should be full of surprices.
-            span.line2
-            .social-icons
-              a(href='https://www.facebook.com/people/Ajay-Kumar/100007421958128', target='_blank')
-                span.facebook
-              a(href='https://www.twitter.com/AjayAp0?lang=en', target='_blank')
-                span.twitter
-              a(href='https://www.linkedin.com/in/ajay-pandey-242355a5/', target='_blank')
-                span.linkedin
-              a(href='https://www.plus.google.com/u/0/114906591500326948583', target='_blank')
-                span.googleplus  
+    ul#slider.rslides
+      li
+        .banner-info
+          h2 Business Mantra
+          span.line1
+          p If you think you Can! you Can.
+          span.line2
+          .social-icons
+            a(href='https://www.facebook.com/people/Ajay-Kumar/100007421958128', target='_blank')
+              span.facebook
+            a(href='https://www.twitter.com/AjayAp0?lang=en', target='_blank')
+              span.twitter
+            a(href='https://www.linkedin.com/in/ajay-pandey-242355a5/', target='_blank')
+              span.linkedin
+            a(href='https://www.plus.google.com/u/0/114906591500326948583', target='_blank')
+              span.googleplus
+        img(src='portfolio/images/banner.jpg')
+      li
+        img(src='portfolio/images/banner2.jpg')
+        .banner-info
+          h2 Success Mantra
+          span.line1
+          p Hard work is key to success.
+          span.line2
+          .social-icons
+            a(href='https://www.facebook.com/people/Ajay-Kumar/100007421958128', target='_blank')
+              span.facebook
+            a(href='https://www.twitter.com/AjayAp0?lang=en', target='_blank')
+              span.twitter
+            a(href='https://www.linkedin.com/in/ajay-pandey-242355a5/', target='_blank')
+              span.linkedin
+            a(href='https://www.plus.google.com/u/0/114906591500326948583', target='_blank')
+              span.googleplus
+      li
+        img(src='portfolio/images/banner3.jpg')
+        .banner-info
+          h2 Life Mantra
+          span.line1
+          p Life should be full of surprices.
+          span.line2
+          .social-icons
+            a(href='https://www.facebook.com/people/Ajay-Kumar/100007421958128', target='_blank')
+              span.facebook
+            a(href='https://www.twitter.com/AjayAp0?lang=en', target='_blank')
+              span.twitter
+            a(href='https://www.linkedin.com/in/ajay-pandey-242355a5/', target='_blank')
+              span.linkedin
+            a(href='https://www.plus.google.com/u/0/114906591500326948583', target='_blank')
+              span.googleplus  
 
 
     // /Banner
@@ -225,6 +229,19 @@ html(lang='en')
           img.img-responsive.slideanim(src='portfolio/images/me-12.jpg', alt='example-3')
     // Gallery
     // footer
+    #videos.contact-me
+        h1.text-center.slideanim my videos
+        p.text-center.slideanim Here are some videos of mine.
+        section#grid3d.vertical
+          .grid-wrap
+            .grid
+              figure
+                iframe(width='560', height='349', src='https://www.youtube.com/embed/YIVAluSL9SU?feature=oembed',frameborder='1', allowfullscreen='')
+              figure
+                iframe(width='560', height='349', src='https://www.youtube.com/embed/4sm5LNqL5j0?feature=oembed',frameborder='1', allowfullscreen='')
+              figure
+                iframe(width='560', height='349', src='https://www.youtube.com/embed/Um63OQz3bjo?feature=oembed',frameborder='1', allowfullscreen='')
+
     #contact.contact-me
       h1.text-center.slideanim Contact Me
       p.text-center.slideanim you can reach me via following medium and socia media platform too.
@@ -262,9 +279,9 @@ html(lang='en')
                   div
                     i.glyphicon.glyphicon-envelope
                     p.p1
-                      a(href='mailto:ajaykumarpandeya120_gmail_41520_com', onclick="myfunction()", target="_blank") Contact Me #1
+                      a(href='mailto:ajaykumarpandeya@gmail.com', onclick="myfunction()", target="_blank") ajaykumarpandeya@gmail.com
                     p.p2
-                      a(href='mailto:ajaybani05120_gmail_41520_com', onclick="myfunction()", target="_blank") Contact Me #2
+                      a(href='mailto:ajaybani05@gmail.com', onclick="myfunction()", target="_blank") ajaybani05@gmail.com
                 h5 Thanks & Regards
                 p Please feel free to contact. 24X7 i ll try to assist you.
           hr
@@ -345,3 +362,24 @@ html(lang='en')
        myfunction(e) {
          this.href=this.href\.replace(/120_/,'@')\.replace(/_41520_/,'.');
        }
+    script.
+      var $iframes = $( "iframe" );
+       
+      // Find &#x26; save the aspect ratio for all iframes
+      $iframes.each(function () {
+        $( this ).data( "ratio", this.height / this.width )
+          // Remove the hardcoded width &#x26; height attributes
+          .removeAttr( "width" )
+          .removeAttr( "height" );
+      });
+       
+      // Resize the iframes when the window is resized
+      $( window ).resize( function () {
+        $iframes.each( function() {
+          // Get the parent container&#x27;s width
+          var width = $( this ).parent().width();
+          $( this ).width( width )
+            .height( width * $( this ).data( "ratio" ) );
+        });
+      // Resize to fix all iframes on page load.
+      }).resize();

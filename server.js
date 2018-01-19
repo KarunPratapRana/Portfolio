@@ -31,7 +31,7 @@ var options = {
 }
 app.use(express.static('public', options))
 
-app.get('/', cache(2), function (req, res) {
+app.get('/', function (req, res) {
   console.log("Welcome to Ajay's Portfolio");
   res.render('profile');
 })
