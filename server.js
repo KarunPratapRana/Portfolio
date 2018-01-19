@@ -31,12 +31,12 @@ var options = {
 }
 app.use(express.static('public', options))
 
-app.get('/', cache(10), function (req, res) {
+app.get('/', cache(2), function (req, res) {
   console.log("Welcome to Ajay's Portfolio");
   res.render('profile');
 })
 app.post('/contact_me', controllers.user.post);
-app.get('/contact_me', cache(10), controllers.user.get);
+app.get('/contact_me', cache(2), controllers.user.get);
 
 const port = process.env.PORT || 3000;
 app.listen(port, function(){
