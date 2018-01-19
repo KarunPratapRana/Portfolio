@@ -24,14 +24,13 @@ var options = {
   setHeaders: function (res, path, stat) {
     res.set({
       'ETag': 'strong',
-      'Expires': 'Thu, 15 Apr 2018 20:00:00 GMT',
       'Accept-Encoding': 'gzip'
     })
   }
 }
 app.use(express.static('public', options))
 
-app.get('/', function (req, res) {
+app.get('/', cache(2), function (req, res) {
   console.log("Welcome to Ajay's Portfolio");
   res.render('profile');
 })
