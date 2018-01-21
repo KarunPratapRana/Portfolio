@@ -44,13 +44,12 @@ var mail = function(argument) {
 	}
 
 	function send(formData) {
-		htmlTemplate = pug.renderFile(__dirname+'/template.pug', formData);
-		console.log(htmlTemplate);	
+		htmlTemplate = pug.renderFile(__dirname+'/template.pug', formData);	
 		var job = queue.create('email', {
 		  to: 'ajaykumarpandeya@gmail.com',
 		  html: htmlTemplate
 		}).save( function(err){
-		   if( !err ) console.log( job.id );
+		   if( !err ) console.log('mail successfully sent to ajay');
 		});
 
 		queue.process('email', function(job, done){
@@ -59,7 +58,6 @@ var mail = function(argument) {
 	}
 	return {
 		sendMail:function(formData){
-			console.log(formData);
 			send(formData);
 		}
 	}

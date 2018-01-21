@@ -34,11 +34,14 @@ html
       display:block;
       }
   body
-    h1 Hello, Ajay
+    h3 Hello, Ajay
+    p
+      | #{name}
+      | EmailId: #{email} Has something to say ...
     ul.testimonials
       li
         .tc 
-           img(src='https://ajay-financialadvisor.herokuapp.com/portfolio/images/index.png')
+           img(src='https://ajay-financialadvisor.herokuapp.com/portfolio/images/account.png')
         p.tc.txt
           |  #{comments}
     p.tc.txt
