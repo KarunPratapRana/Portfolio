@@ -1,0 +1,47 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title Untitled Document
+    style.
+      h1 {
+      text-align:center
+      }
+      .testimonials {
+      margin:0;
+      padding:0;
+      list-style:none;
+      max-width:800px;
+      margin:auto;
+      background:#f9f9f9;
+      padding:5px;
+      display:table;
+      }
+      .testimonials li {
+      display:table-row;
+      }
+      .tc {
+      display:table-cell;
+      vertical-align:top;
+      padding:10px;
+      border-bottom:1px dotted #000;
+      }
+      .txt {
+      vertical-align:middle;
+      }
+      .testimonials li img {
+      border-radius:10px;
+      display:block;
+      }
+  body
+    h1 Hello, Ajay
+    ul.testimonials
+      li
+        .tc 
+           img(src='https://ajay-financialadvisor.herokuapp.com/portfolio/images/index.png')
+        p.tc.txt
+          |  #{comments}
+    p.tc.txt
+      | Thanks & regards.
+      | ajay-financialadvisor.herokuapp.com
+
