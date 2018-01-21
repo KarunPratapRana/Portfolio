@@ -27,7 +27,7 @@ var mail = function(argument) {
 		    });	
 
 		    let mailOptions = {
-		        from: 'ajaybani05@gmail.com', // sender address
+		        from: 'Ajay Portfolio 👥 <ajaybani05@gmail.com>', // sender address
 		        to: data.to, // list of receivers
 		        subject: 'Comment on your profile', // Subject line
 		        html: data.html

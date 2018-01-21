@@ -12,13 +12,15 @@ html
       padding:0;
       list-style:none;
       max-width:800px;
-      margin:auto;
+      margin:0;
       background:#f9f9f9;
-      padding:5px;
+      padding:0;
       display:table;
       }
       .testimonials li {
       display:table-row;
+      padding:0;
+      margin:0;
       }
       .tc {
       display:table-cell;
@@ -36,15 +38,23 @@ html
   body
     h3 Hello, Ajay
     p
-      | #{name}
-      | EmailId: #{email} Has something to say ...
+      | Name #{name}
+    p
+      | EmailId: #{email} 
+    p
+      |commented on your portfolio .
     ul.testimonials
       li
         .tc 
            img(src='https://ajay-financialadvisor.herokuapp.com/portfolio/images/account.png')
         p.tc.txt
           |  #{comments}
+
+    br
     p.tc.txt
       | Thanks & regards.
+    p
+      | Ajay Kumar Pandey
+    p
       | ajay-financialadvisor.herokuapp.com
 
