@@ -1,6 +1,10 @@
-var redisPort = process.env.REDIS_PORT || 6379,
-    redisHost = process.env.REDIS_HOST || '127.0.0.1',
-    redisAuth = process.env.REDIS_AUTH || null,
+//var redisPort = process.env.REDIS_PORT || 6379,
+//    redisHost = process.env.REDIS_HOST || '127.0.0.1',
+//    redisAuth = process.env.REDIS_AUTH || null,
+//    redis = require('redis');
+var redisPort = (process.env.NODE_ENV =='production')?19628 : 6379,
+    redisHost = (process.env.NODE_ENV =='production')?'redis-19628.c13.us-east-1-3.ec2.cloud.redislabs.com' : '127.0.0.1',
+    redisAuth = null,
     redis = require('redis');
 var onError = function (error) {
   console.error('Error in Redis client: ' + error.message);

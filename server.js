@@ -39,5 +39,5 @@ app.get('/contact_me', cache(2), controllers.user.get);
 
 const port = process.env.PORT || 3000;
 app.listen(port, function(){
-	console.log('server is runnung at port ' +port);
+	console.log(process.env.NODE_ENV?process.env.NODE_ENV:'testing '+'server is runnung at port ' +port);
 });
