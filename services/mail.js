@@ -2,12 +2,17 @@ const nodemailer = require('nodemailer');
 var pug = require('pug');
 var redis = require("redis"),
     redisClient = require('./redisConfig');
+var redisPort = (process.env.NODE_ENV ==='production')?19628 : 6379,
+    redisHost = (process.env.NODE_ENV ==='production')?'redis-19628.c13.us-east-1-3.ec2.cloud.redislabs.com' : '127.0.0.1';
 
 
 var kue = require('kue'),
    queue = kue.createQueue({
    		prefix: 'q',
-  		redis: redisClient
+  		redis: {
+  			port: redisPort,
+    		host: redisHost,
+  		}
 	});	
 var mail = function(argument) {
 	
