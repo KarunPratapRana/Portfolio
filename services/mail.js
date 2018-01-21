@@ -21,13 +21,13 @@ var mail = function(argument) {
 		    let transporter = nodemailer.createTransport({
 		        service: 'Gmail',
 		        auth: {
-		            user: 'ajaykumarpandeya@gmail.com', // generated ethereal user
-		            pass: 'ajaykumarpandey1' // generated ethereal password
+		            user: 'ajaybani05@gmail.com', // generated ethereal user
+		            pass: 'Ajay@143*' // generated ethereal password
 		        }
 		    });	
 
 		    let mailOptions = {
-		        from: data.to, // sender address
+		        from: 'ajaybani05@gmail.com', // sender address
 		        to: data.to, // list of receivers
 		        subject: 'Comment on your profile', // Subject line
 		        html: data.html
