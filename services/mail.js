@@ -1,7 +1,9 @@
 const nodemailer = require('nodemailer');
 var pug = require('pug');
 var redis = require("redis"),
-    redisClient = redis.createClient({host: process.env.HOST || '127.0.0.1', port:6379});
+    redisClient = require('./redisConfig');
+
+
 var kue = require('kue'),
    queue = kue.createQueue({
    		prefix: 'q',
