@@ -35,13 +35,15 @@ html(lang='en')
     link(href='portfolio/css/cobox.css', rel='stylesheet', type='text/css')
     link(href='portfolio/css/portfolio.css', rel='stylesheet', type='text/css', media='all')
     link(href='portfolio/css/style.css', rel='stylesheet', type='text/css', media='all')
+    link(href='portfolio/css/pricing.css', rel='stylesheet', type='text/css', media='all')
     // /css files
     // font links
-    link(href='//fonts.googleapis.com/css?family=Quicksand:400,700,300', rel='stylesheet', type='text/css')
+    //link(href='//fonts.googleapis.com/css?family=Quicksand:400,700,300', rel='stylesheet', type='text/css')
     link(href='//fonts.googleapis.com/css?family=Cinzel:400,700,900', rel='stylesheet', type='text/css')
     link(rel='canonical', href='https://www.ajay-financialadvisor.herokuapp.com')
     link(rel='icon', href='portfolio/images/favicon.ico', type='image/x-icon')
     link(rel='alternate', hreflang='x', href='https://ajayfinancialadviser.com/')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
     // /font links
     // js files
     script(src='portfolio/js/modernizr.custom.js')
@@ -50,7 +52,8 @@ html(lang='en')
     script(type="application/ld+json").
       { "@context": "http://schema.org", "@type": "Person", "address": { "@type": "PostalAddress", "addressLocality": "G-179 sector 22", "addressRegion": "Noida", "postalCode": "201301", "streetAddress": "Near Mother Dairy and Shiv Mandir Sector 22" }, "email": "ajaykumarpandeya@gmail.com", "image": "https://ajayfinancialadviser.com/portfolio/images/man.jpg", "jobTitle": "Finance & Accountant", "name": "Ajay Kumar Pandey", "gender": "male", "nationality": "Indian", "telephone": "9643862867", "url": "https://ajayfinancialadviser.com/" }
 
-  body#myPage(data-spy='scroll', data-target='.navbar', data-offset='60')
+    script(src='http://code.jquery.com/jquery-1.6.2.min.js')
+  body#myPage(data-spy='scroll', data-targ.navbar-wrapperet='.navbar', data-offset='60')
     .navbar-wrapper
       .container
         nav.navbar.navbar-inverse.navbar-static-top
@@ -71,7 +74,7 @@ html(lang='en')
                 li
                   a(href='#portfolio') Portfolio
                 li
-                  a(href='#gallery') Gallery
+                  a(href='#pricing') Pricing
                 li
                   a(href='#videos') Videos
                 li
@@ -202,8 +205,108 @@ html(lang='en')
               a(href='portfolio/images/013.jpg', target='_blank' title='Billing With Import Export')
                 img.slideanim(src='portfolio/images/013.jpg', alt='Billing With Import Export')
     // /Portfolio
+
+    #pricing.myportfolio
+      .container
+        h1.text-center.slideanim Pricing
+        p.text-center.slideanim Our pricing is as follows.
+        .row
+          .col-md-4.col-sm-6
+            .pricingTable
+              .pricingTable-header
+                h3.heading Basic
+                //span.subtitle Lorem ipsum dolor sit amet
+                .price-value
+                  | 2500
+                  span.currency Rs
+                  span.month /mo
+              ul.pricing-content
+                li GSTR-3B Filling
+                li GSTR-1 Filling
+                li GSTR 2-A Reconcilition
+                li 
+                  span
+                    i.fa.fa-close(style='font-size:1.7em;color:red')
+                li 
+                  span
+                    i.fa.fa-close(style='font-size:1.7em;color:red')
+                li 
+                  span
+                    i.fa.fa-close(style='font-size:1.7em;color:red')
+                li 
+                  span
+                    i.fa.fa-close(style='font-size:1.7em;color:red')
+                li 
+                  span
+                    i.fa.fa-close(style='font-size:1.7em;color:red')
+                li 
+                  span
+                    i.fa.fa-close(style='font-size:1.7em;color:red')
+                li 
+                  span
+                    i.fa.fa-close(style='font-size:1.7em;color:red')
+              //a.read(href='#')
+                | sign up
+                i.fa.fa-angle-right
+          .col-md-4.col-sm-6
+            .pricingTable
+              .pricingTable-header
+                h3.heading Pro
+                //span.subtitle Lorem ipsum dolor sit amet
+                .price-value
+                  | 4500
+                  span.currency Rs
+                  span.month /mo
+              ul.pricing-content
+                li GSTR-3B Filling
+                li GSTR-1 Filling
+                li GSTR 2-A Reconcilition
+                li TDS Return
+                li Form 16-A
+                li 
+                  span
+                    i.fa.fa-close(style='font-size:1.7em;color:red')
+                li 
+                  span
+                    i.fa.fa-close(style='font-size:1.7em;color:red')
+                li 
+                  span
+                    i.fa.fa-close(style='font-size:1.7em;color:red')
+                li 
+                  span
+                    i.fa.fa-close(style='font-size:1.7em;color:red')
+                li 
+                  span
+                    i.fa.fa-close(style='font-size:1.7em;color:red')
+              //a.read(href='#')
+                | sign up
+                i.fa.fa-angle-right
+          .col-md-4.col-sm-6
+            .pricingTable
+              .pricingTable-header
+                h3.heading Premium
+                //span.subtitle Lorem ipsum dolor sit amet
+                .price-value
+                  | 8000
+                  span.currency Rs
+                  span.price +
+                  span.month /mo
+              ul.pricing-content
+                li GSTR-3B Filling
+                li GSTR-1 Filling
+                li GSTR 2-A Reconcilition
+                li TDS Return
+                li Form 16-A
+                li GST Registration
+                li Additional Place Of Business Registration
+                li Accounts & Records maintaince
+                li E-Way Bill
+                li Invoicing under GST
+              a.read(href='#')
+                | more
+                i.fa.fa-angle-right
     // Gallery
-    #gallery.mygallery
+    //#gallery.mygallery
       h1.text-center.slideanim My Gallery
       .text-center
         a(href='#gallery', title='My Image Gallery')
@@ -239,9 +342,9 @@ html(lang='en')
           .grid-wrap
             .grid
               figure
-                iframe(width='560', height='349', src='https://www.youtube.com/embed/YIVAluSL9SU?feature=oembed',frameborder='1', allowfullscreen='')
+                iframe(width='560', height='349', src='https://www.youtube.com/embed/bcHaPvRFVTo?feature=oembed',frameborder='1', allowfullscreen='')
               figure
-                iframe(width='560', height='349', src='https://www.youtube.com/embed/4sm5LNqL5j0?feature=oembed',frameborder='1', allowfullscreen='')
+                iframe(width='560', height='349', src='https://www.youtube.com/embed/OXOlgRaU6dk?feature=oembed',frameborder='1', allowfullscreen='')
               figure
                 iframe(width='560', height='349', src='https://www.youtube.com/embed/Um63OQz3bjo?feature=oembed',frameborder='1', allowfullscreen='')
 

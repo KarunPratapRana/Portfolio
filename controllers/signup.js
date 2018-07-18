@@ -4,10 +4,9 @@ var signup = function() {
 	return {
 		post: function(req, res){
 			console.log(req.body.email+ " wants to contact us");
-			//fs.appendFileSync("contactUs.txt", 'Email: '+req.body.email+'\n', "UTF-8",{'flags': 'a+'});
-			//res.render('profile');
+			console.log(req.body)
 			services.mail.sendMail(req.body);
-			res.render('profile');
+			res.redirect('/')
 		},
 		get: function (req, res) {
   			console.log("Redirect");

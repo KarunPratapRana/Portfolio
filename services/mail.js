@@ -16,66 +16,48 @@ var kue = require('kue'),
     		host: redisHost,
   		}
 	});	
-var mail = function(argument) {
-	
-	function email(data, done) {
-		//console.log(data);
-	    passport.use(new GoogleStrategy({
-	        clientID: "114697355005-3fbioarctn450cd9a0g6ff3a9clrb087.apps.googleusercontent.com",
-	        clientSecret: "6VZxjEKHZb_IdrNHI7dIG-LQ",
-	        callbackURL: "https://ajay-financialadvisor.herokuapp.com/auth/google/callback"
-	      },
-	      function(accessToken, refreshToken, profile, cb) {
-	      		console.log(accessToken +refreshToken+ profile);
-	      		//process.nextTick(function () {
-		      		nodemailer.createTestAccount((err, account) => {		
-					    let transporter = nodemailer.createTransport({
-					        service: 'Gmail',
-					        XOAuth2: {
-						      user: "ajaybani05@gmail.com",
-						      clientId: "114697355005-3fbioarctn450cd9a0g6ff3a9clrb087.apps.googleusercontent.com",
-						      clientSecret: "6VZxjEKHZb_IdrNHI7dIG-LQ",
-						      refreshToken:refreshToken,
-						      accessToken:accessToken,
-						      timeout: 3600
-						    }
-					    });				
+var mail = function() {
+	function email(data, done) {	
+		let transporter = nodemailer.createTransport({
+			service: 'gmail',
+			secure: false,
+			port: 25,
+			auth: {
+				user: "ajaybani05@gmail.com",
+				pass: "Ajay@143*"
+			},
+			tls: {
+				rejectUnauthorized: false
+			}
+		});				
 
-					    let mailOptions = {
-					        from: 'Ajay Portfolio 👥 <ajaybani05@gmail.com>', // sender address
-					        to: data.to, // list of receivers
-					        subject: 'Comment on your profile', // Subject line
-					        html: data.html
-					    };					
+		let mailOptions = {
+			from: 'AjayFinanceAdvisier 👥 <ajaybani05@gmail.com>', // sender address
+			to: data.to, // list of receivers
+			subject: 'Client Query', // Subject line
+			html: data.html
+		};					
 
-					    // send mail with defined transport object
-					    transporter.sendMail(mailOptions, (error, info) => {
-					        if (error) {
-					            return console.log(error);
-					        }	
-					    });
-					});
-					console.log(profile);
-					done();
-					//return done(null, profile);
-				//});
-	    	}
-
-	    ));
+		// send mail with defined transport object
+		transporter.sendMail(mailOptions, (error, info) => {
+			if (error) {
+				return console.log(error);
+				done(error);
+			}
+			done();	
+		});
 	}
 
+	queue.process('email', function(job, done){
+		email(job.data, done);
+	});
+	  
 	function send(formData) {
 		htmlTemplate = pug.renderFile(__dirname+'/template.pug', formData);	
-		var job = queue.create('email', {
+		queue.create('email', {
 		  to: 'ajaykumarpandeya@gmail.com',
 		  html: htmlTemplate
-		}).save( function(err){
-		   if( !err ) console.log('sending mail to ajay');
-		});
-
-		queue.process('email', function(job, done){
-	  		email(job.data, done);
-		});	
+		}).save();	
 	}
 	return {
 		sendMail:function(formData){
