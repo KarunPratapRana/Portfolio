@@ -1132,3 +1132,10 @@ footer span.glyphicon.glyphicon-chevron-up {
   background: #fff url(../images/banner2.jpg) no-repeat center center fixed;
   background-size: cover;
 }*/
+.header img {
+	float: left;
+	width: 3.7em;
+	height: 2em;
+	background: #555;
+	margin-top: -15px;
+  }
