@@ -993,6 +993,9 @@ footer span.glyphicon.glyphicon-chevron-up {
 .navbar-inverse .navbar-brand {
     font-size: 26px;
 }
+.skill-info h4 {
+	font-size: 15px
+}
 }
 
 @media (max-width: 414px){
@@ -1017,9 +1020,16 @@ footer span.glyphicon.glyphicon-chevron-up {
 	input#name,input#email {
 	height:45px;
 } 
+
+	.skill-info h4 {
+		font-size: 15px
+	}
 }
 
 @media (max-width: 384px) {
+	.skill-info h4 {
+		font-size: 15px
+	}
 	.banner-info {
     margin: 20px 0 0 45px;
 }
@@ -1068,6 +1078,9 @@ footer span.glyphicon.glyphicon-chevron-up {
 }
 
 @media (max-width: 375px) {
+	.skill-info h4 {
+		font-size: 13px
+	}
 	.mygallery img.img-responsive {
     height: 165px;
 }
@@ -1086,6 +1099,9 @@ footer span.glyphicon.glyphicon-chevron-up {
 }
 
 @media (max-width: 320px) {
+	.skill-info h4 {
+		font-size: 13px
+	}
 	.banner-info {
     margin: 20px 0 0 0px;
 }
