@@ -452,12 +452,6 @@ html(lang='en')
     // /js filesh
     script.
       $(document).on('click',function(){ $('.collapse').collapse('hide'); }) 
-    script(async='', src='https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID')
-    script.
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-112713695-1');
 
      script.
        myfunction(e) {
@@ -484,3 +478,20 @@ html(lang='en')
         });
       // Resize to fix all iframes on page load.
       }).resize();
+    script(async='', src='https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID')
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-112713695-1');
+    script.
+      (function() {
+      var cx = '004254698029777362908:cs-iz5f9ehe';
+      var gcse = document.createElement('script');
+      gcse.type = 'text/javascript';
+      gcse.async = true;
+      gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(gcse, s);
+      })();
+    gcse:search
