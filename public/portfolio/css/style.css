@@ -295,7 +295,7 @@ img.img-responsive {
 	padding: 1em 0;
 	font-family: 'Cinzel', serif;
 	font-size:20px;
-	line-height:25px;
+	line-height:10px;
 	font-weight:bold;
 }
 .mydetails p {
@@ -337,6 +337,7 @@ img.img-responsive {
 	font-weight:bold;
 }
 .myskills p {	
+	text-align: justify;
 	padding:25px 37px;
 	font-size:17px;
 	line-height:25px;

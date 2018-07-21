@@ -28,15 +28,15 @@
 }
 
 .pricingTable:before{
-    border-right: 2px solid #08c6aa;
-    border-left: 2px solid #08c6aa;
+    border-right: 2px solid #4CAF50;
+    border-left: 2px solid #4CAF50;
     transform: scaleY(0);
     transform-origin: 100% 0 0;
 }
 
 .pricingTable:after{
-    border-bottom: 2px solid #08c6aa;
-    border-top: 2px solid #08c6aa;
+    border-bottom: 2px solid #4CAF50;
+    border-top: 2px solid #4CAF50;
     transform: scaleX(0);
     transform-origin: 0 100% 0;
 }
@@ -50,7 +50,7 @@
 }
 
 .pricingTable .pricingTable-header{
-    background: #08c6aa;
+    background: #4CAF50;
     color: #fff;
     margin: -2px -2px 35px;
     padding: 40px 0;
@@ -68,7 +68,7 @@
 }
 
 .pricingTable .price-value{
-    font-size: 72px;
+    font-size: 60px;
     font-weight: 600;
     margin-top: 10px;
     position: relative;
@@ -104,27 +104,27 @@
 }
 
 .pricingTable .pricing-content li{
-    font-size: 16px;
+    font-size: 14px;
     color: #7a7e82;
-    line-height: 40px;
+    line-height: 32px;
 }
 
 .pricingTable .read{
     display: inline-block;
     border: 2px solid #7a7e82;
     border-right: none;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 700;
     color: #7a7e82;
-    padding: 9px 30px;
+    padding: 3px 30px;
     position: relative;
     text-transform: uppercase;
     transition: all 0.3s ease 0s;
 }
 
 .pricingTable .read:hover{
-    border-color: #08c6aa;
-    color: #08c6aa;
+    border-color: #4CAF50;
+    color: #4CAF50;
 }
 
 .pricingTable .read i{
@@ -144,10 +144,10 @@
 .pricingTable .read:after{
     content: "";
     display: block;
-    height: 30px;
+    height: 20px;
     border-left: 2px solid #7a7e82;
     position: absolute;
-    right: -11px;
+    right: -8px;
     transition: all 0.3s ease 0s;
 }
 
@@ -163,7 +163,7 @@
 
 .pricingTable .read:hover:before,
 .pricingTable .read:hover:after{
-    border-left-color: #08c6aa;
+    border-left-color: #4CAF50;
 }
 
 @media screen and (max-width: 990px){
