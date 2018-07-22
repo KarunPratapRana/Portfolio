@@ -2,7 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>http://www.ajaccountinggroup.com/</loc>
-        <lastmod>2018-07-21</lastmod>
+        <lastmod>2018-07-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://ajay-financialadvisor.herokuapp.com/</loc>
+        <lastmod>2018-01-17</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>

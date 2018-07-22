@@ -4,5 +4,3 @@ RewriteCond %{HTTP_HOST} ^ajaccountinggroup.com [NC]
 RewriteRule ^(.*)$ http://www.ajaccountinggroup.com/$1 [L,R=301]
 RewriteCond %{HTTP_HOST} !^www\. [NC]
 RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
-#RewriteCond %{HTTP_HOST} ^ajaccountinggroup.com$
-#RewriteRule ^/?$ "http\:\/\/ajaccountinggroup\.com\/" [R=301,L]
